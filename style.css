@@ -15,7 +15,7 @@ body {
     border: 2px solid;
     box-shadow: 0 0 0 1.3px;
     cursor: pointer;
-    font-size: 53px;
+    font-size: 65px;
     transition: width 0.2s, height 0.2s;
     font-family: "Comic Neue", cursive;
 }
