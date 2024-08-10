@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", "Poppins", Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.cell {
+    height: 75px;
+    width: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 1.3px;
+    cursor: pointer;
+    font-size: 53px;
+    transition: width 0.2s, height 0.2s;
+    font-family: "Permanet Marker", cursive;
+}
+
+.cell:hover {
+    height: 80px;
+    width: 80px;
+}
+
+#gameContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    width: 275px;
+    height: 275px;
+    margin: auto;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #04AA6D;;
+    border-radius: 5px;
+    box-shadow:  0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+}
