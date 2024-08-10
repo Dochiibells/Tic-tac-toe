@@ -1,6 +1,11 @@
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#gameStatus");
+const scoreText = document.querySelector("#scoreTotal");
 const restartBtn = document.querySelector("#restartBtn");
+const winX = document.querySelector("#scoreX");
+const winO = document.querySelector("#scoreO");
+let xWins = 0;
+let oWins = 0;
 
 const winConditions = [
     [0, 1, 2],
@@ -77,6 +82,15 @@ function checkWinner() {
 
     if (roundWon) {
         statusText.textContent = `🎉${currentPlayer} wins!🎉`;
+        
+        if(currentPlayer == "X") {
+            xWins++
+            winX.textContent = `X Wins: ${xWins}`;
+        }else {
+            oWins++ 
+            winO.textContent = `O Wins: ${oWins}`;
+        }
+
         running = false;
     } else if (!options.includes("")) {
         statusText.textContent = `Draw!`;
